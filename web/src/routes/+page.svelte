@@ -20,9 +20,9 @@
 		class="bg-[#241802] px-4 py-2 text-[#ffecc9] inset-ring-3 inset-ring-[#9c6d17]"
 		>Search our tree</a
 	>
-	<a
-		href={resolve('/login')}
-		class="bg-[#241802] px-4 py-2 text-[#ffecc9] inset-ring-3 inset-ring-[#9c6d17]"
-		>Log in to grow our tree</a
-	>
+	<!-- <a -->
+	<!-- 	href={resolve('/login')} -->
+	<!-- 	class="bg-[#241802] px-4 py-2 text-[#ffecc9] inset-ring-3 inset-ring-[#9c6d17]" -->
+	<!-- 	>Log in to grow our tree</a -->
+	<!-- > -->
 </div>

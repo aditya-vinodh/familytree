@@ -34,7 +34,8 @@
 		{#each data.persons as person (person.id)}
 			<a
 				href={resolve(`/people/${person.id}`)}
-				class="w-md rounded-sm bg-[#f2d7a5] p-2 text-sm text-[#241802]">{person.fullName}</a
+				class="w-full max-w-md rounded-sm bg-[#f2d7a5] p-2 text-sm text-[#241802]"
+				>{person.fullName}</a
 			>
 		{/each}
 	</div>
