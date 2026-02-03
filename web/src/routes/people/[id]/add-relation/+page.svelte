@@ -42,8 +42,8 @@
 	</div>
 
 	<form action={`/people/${data.person.id}/add-relation`}>
-		<div class="mb-5 flex flex-col items-center">
-			<div class="w-md">
+		<div class="mt-5 mb-5 flex flex-col items-center">
+			<div class="w-full max-w-md">
 				<fieldset class="border">
 					<legend>Select a relation</legend>
 
@@ -101,7 +101,7 @@
 				id="q"
 				name="q"
 				placeholder="Search"
-				class="inset-shadow-md h-[40px] w-md border-0 bg-[#ffecc9] text-sm inset-ring-3 inset-ring-[#9c6d17] placeholder:text-[#ab8f6c] focus-visible:ring-0 focus-visible:outline-none"
+				class="inset-shadow-md h-[40px] w-full max-w-md border-0 bg-[#ffecc9] text-sm inset-ring-3 inset-ring-[#9c6d17] placeholder:text-[#ab8f6c] focus-visible:ring-0 focus-visible:outline-none"
 				value={data.q}
 			/>
 		</div>
@@ -110,7 +110,7 @@
 			{#each data.searchResults as person (person.id)}
 				<button
 					on:click={() => addRelation(person.id)}
-					class="w-md rounded-sm bg-[#f2d7a5] p-2 text-left text-sm text-[#241802]"
+					class="w-full max-w-md rounded-sm bg-[#f2d7a5] p-2 text-left text-sm text-[#241802]"
 					>{person.fullName}</button
 				>
 			{/each}
