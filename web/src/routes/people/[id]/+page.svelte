@@ -81,7 +81,7 @@
 	{#if data.relations.find((r) => r.relation === 'sibling')}
 		<div class="mt-10">
 			<h2 class="mb-2 text-lg text-[#241802] md:text-xl">Siblings</h2>
-			<div class="flex gap-2">
+			<div class="flex flex-wrap gap-2">
 				{#each data.relations.filter((r) => r.relation === 'sibling') as rel (rel.id)}
 					<a
 						href={resolve(`/people/${rel.id}`)}
@@ -95,7 +95,7 @@
 	{#if data.relations.find((r) => r.relation === 'spouse')}
 		<div class="mt-10">
 			<h2 class="mb-2 text-lg text-[#241802] md:text-xl">Spouse</h2>
-			<div class="flex gap-2">
+			<div class="flex flex-wrap gap-2">
 				{#each data.relations.filter((r) => r.relation === 'spouse') as rel (rel.id)}
 					<a
 						href={resolve(`/people/${rel.id}`)}
@@ -109,7 +109,7 @@
 	{#if data.relations.find((r) => (r.relation === 'mother' || r.relation === 'father') && r.person2Id === data.person.id)}
 		<div class="mt-10">
 			<h2 class="mb-2 text-lg text-[#241802] md:text-xl">Children</h2>
-			<div class="flex gap-2">
+			<div class="flex flex-wrap gap-2">
 				{#each data.relations.filter((r) => (r.relation === 'mother' || r.relation === 'father') && r.person2Id === data.person.id) as rel (rel.id)}
 					<a
 						href={resolve(`/people/${rel.id}`)}
