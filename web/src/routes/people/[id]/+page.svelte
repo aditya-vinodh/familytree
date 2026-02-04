@@ -21,6 +21,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>{data.person.fullName} - The Great Family Tree</title>
+</svelte:head>
+
 <div class="overflow-none h-screen w-screen bg-[#ffecc9] p-2">
 	<div class="flex items-center justify-between">
 		<a href={resolve('/')} class="text-sm text-[#241802]">The Great Family Tree</a>
