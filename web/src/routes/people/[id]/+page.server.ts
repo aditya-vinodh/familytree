@@ -14,7 +14,7 @@ export const load = async ({params, cookies}) => {
         }
     }
 
-    const persons = await db.select().from(person).where(eq(person.id, parseInt(id)))
+    const persons = await db.select({id: person.id, fullName: person.fullName, birthYear: person.birthYear, birthCity: person.birthCity, birthCountry: person.birthCountry}).from(person).where(eq(person.id, parseInt(id)))
     if (persons.length === 0) {
         return { person: null, isAdmin }
     }
